@@ -1,0 +1,23 @@
+{
+  "name": "js-profesional",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeRangelCode/js-profesional.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgeRangelCode/js-profesional/issues"
+  },
+  "homepage": "https://github.com/GeorgeRangelCode/js-profesional#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
