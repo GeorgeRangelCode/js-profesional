@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="/ejercicios/">Go back</a>
+  <p><em>Abre la consola</em></p>
+
+  <script>
+    // Closures
+
+    // printColor
+
+    // IIFE
+
+    // Closure es la combinación del scope de una función y la función que fue definida
+    /* (function () {
+      let color = "green"
+
+      function printColor() {
+        console.log(color)
+      }
+
+      printColor()
+    })() */
+
+    // Funciones que regresan functiones
+    /*   function makeColorPrinter(color) {
+        let colorMessage = `The color is ${color}`
+  
+        return function () {
+          console.log(colorMessage)
+        }
+  
+      }
+  
+      let greenColorPrinter = makeColorPrinter("green")
+      console.log(greenColorPrinter()) */
+
+    // Closure nos permite hacer una funcionalidad que el lenguaje no trae que es variables privadas
+
+    // variables privadas
+    /* const counter = {
+      count: 3
+    }
+
+    console.log(counter) */
+
+    function makeCounter(n) {
+      let count = n
+
+      return {
+        increase: function () {
+          count = count + 1
+        },
+        decrease: function () {
+          count = count - 1
+        },
+        getCount: function () {
+          return count
+        }
+      }
+    }
+
+    let counter = makeCounter(7)
+    console.log("The count is: " + counter.getCount())
+    counter.increase()
+    console.log("The count is: " + counter.getCount())
+    counter.decrease()
+    counter.decrease()
+    counter.decrease()
+    counter.decrease()
+    console.log("The count is: " + counter.getCount())
+
+  </script>
+
+</body>
+
+</html>
